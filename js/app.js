@@ -51,7 +51,7 @@ apps.forEach(function (app, i) {
     "afterbegin",
     `<div class="apps">
     <img
-      src="./../img/${app.img}.webp"
+      src="./img/${app.img}.webp"
       alt="Projects"
       class="apps__img"
     />
