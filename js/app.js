@@ -4,7 +4,7 @@ const projects = {
     name: "Pop Studio",
     about: "My Current portfolio site, and I LOVE it!!!😍",
     status: "indevelopment",
-    img: "background.webp",
+    img: "background",
     link: "https://link.io/muideenpopoola/studio",
     github: "https://github.io/muideenpopoola/studio",
   },
@@ -13,7 +13,7 @@ const projects = {
     name: "Natours",
     about: "A small projects to learn the fundamental of sass",
     status: "finished",
-    img: "natours.webp",
+    img: "natours",
     link: "muideenpopoola.github.io/natours/",
     github: "https://github.com/muideenpopoola/natours",
   },
@@ -22,7 +22,7 @@ const projects = {
     name: "Trillo",
     about: "Your all in one booking app UI",
     status: "finished",
-    img: "trillo.wepb",
+    img: "trillo",
     link: "muideenpopoola.github.io/trillo/",
     github: "https://github.com/muideenpopoola/trillo",
   },
@@ -31,7 +31,7 @@ const projects = {
     name: "Nexter",
     about: "A property management website Ui",
     status: "finished",
-    img: "nexter.wepb",
+    img: "nexter",
     link: "muideenpopoola.github.io/nexter/",
     github: "https://github.com/muideenpopoola/nexter",
   },
@@ -51,7 +51,7 @@ apps.forEach(function (app, i) {
     "afterbegin",
     `<div class="apps">
     <img
-      src="./img/${app.img}.webp"
+      src="./img/${app.img}.png"
       alt="Projects"
       class="apps__img"
     />
