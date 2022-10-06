@@ -93,7 +93,7 @@ setInterval(function () {
 
 //////////////////////////////////////////////////////////////////////////////////////////
 const tabs = document.querySelectorAll(".pages--tab");
-const tabsContainer = document.querySelector(".tabs-container");
+const tabsContainer = document.querySelector("body");
 const tabsContent = document.querySelectorAll(".page");
 const allSections = document.querySelectorAll(".section");
 
