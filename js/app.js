@@ -5,8 +5,8 @@ const projects = {
     about: "My Current portfolio site, and I LOVE it!!!😍",
     status: "indevelopment",
     img: "background",
-    link: ".muideenpopoola.github.io/studio",
-    github: "github.io/muideenpopoola/studio",
+    link: "https://muideenpopoola.github.io/studio",
+    github: "https://github.io/muideenpopoola/studio",
   },
 
   natours: {
@@ -14,8 +14,8 @@ const projects = {
     about: "A small projects to learn the fundamental of sass",
     status: "finished",
     img: "natours",
-    link: "muideenpopoola.github.io/natours/",
-    github: "github.com/muideenpopoola/natours",
+    link: "https://muideenpopoola.github.io/natours/",
+    github: "https://github.com/muideenpopoola/natours",
   },
 
   trillo: {
@@ -23,8 +23,8 @@ const projects = {
     about: "Your all in one booking app UI",
     status: "finished",
     img: "trillo",
-    link: "muideenpopoola.github.io/trillo/",
-    github: "github.com/muideenpopoola/trillo",
+    link: "https://muideenpopoola.github.io/trillo/",
+    github: "https://github.com/muideenpopoola/trillo",
   },
 
   nexter: {
@@ -32,8 +32,8 @@ const projects = {
     about: "A property management website Ui",
     status: "finished",
     img: "nexter",
-    link: "muideenpopoola.github.io/nexter/",
-    github: "github.com/muideenpopoola/nexter",
+    link: "https://muideenpopoola.github.io/nexter/",
+    github: "https://github.com/muideenpopoola/nexter",
   },
 };
 
@@ -105,7 +105,7 @@ apps.forEach(function (app, i) {
 
       <div class="apps__btn">
         <button>
-          <a href="${app.github}">
+          <a href="${app.github}" target="_blank">
             <svg class="icon icon-github">
               <use
                 xlink:href="img/sprite.svg#icon-github"
@@ -115,7 +115,7 @@ apps.forEach(function (app, i) {
         </button>
 
         <button>
-          <a href="${app.link}">
+          <a href="${app.link}" target="_blank">
             <svg class="icon icon-github">
               <use
                 xlink:href="img/sprite.svg#icon-launch"
