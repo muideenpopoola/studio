@@ -5,8 +5,8 @@ const projects = {
     about: "My Current portfolio site, and I LOVE it!!!😍",
     status: "indevelopment",
     img: "background",
-    link: "https://link.io/muideenpopoola/studio",
-    github: "https://github.io/muideenpopoola/studio",
+    link: ".muideenpopoola.github.io/studio",
+    github: "github.io/muideenpopoola/studio",
   },
 
   natours: {
@@ -15,7 +15,7 @@ const projects = {
     status: "finished",
     img: "natours",
     link: "muideenpopoola.github.io/natours/",
-    github: "https://github.com/muideenpopoola/natours",
+    github: "github.com/muideenpopoola/natours",
   },
 
   trillo: {
@@ -24,7 +24,7 @@ const projects = {
     status: "finished",
     img: "trillo",
     link: "muideenpopoola.github.io/trillo/",
-    github: "https://github.com/muideenpopoola/trillo",
+    github: "github.com/muideenpopoola/trillo",
   },
 
   nexter: {
@@ -33,7 +33,7 @@ const projects = {
     status: "finished",
     img: "nexter",
     link: "muideenpopoola.github.io/nexter/",
-    github: "https://github.com/muideenpopoola/nexter",
+    github: "github.com/muideenpopoola/nexter",
   },
 };
 
