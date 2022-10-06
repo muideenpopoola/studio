@@ -51,7 +51,7 @@ apps.forEach(function (app, i) {
     "afterbegin",
     `<div class="apps">
     <img
-      src="/img/${app.img}.webp"
+      src="../img/${app.img}.webp"
       alt="Projects"
       class="apps__img"
     />
@@ -70,7 +70,7 @@ apps.forEach(function (app, i) {
           
           <img
             class="logo"
-            src="/img/mycollection/004-html-5.png"
+            src="/img/004-html-5.png"
             alt="html"
           />
         </div>
@@ -79,7 +79,7 @@ apps.forEach(function (app, i) {
           
           <img
             class="logo"
-            src="/img/mycollection/005-css-3.png"
+            src="/img/005-css-3.png"
             alt="css"
           />
         </div>
@@ -88,7 +88,7 @@ apps.forEach(function (app, i) {
           
           <img
             class="logo"
-            src="/img/mycollection/003-js.png"
+            src="/img/003-js.png"
             alt="javascript"
           />
         </div>
@@ -97,7 +97,7 @@ apps.forEach(function (app, i) {
         
           <img
             class="logo"
-            src="/img/mycollection/008-sass.png"
+            src="/img/008-sass.png"
             alt="Sass"
           />
         </div>

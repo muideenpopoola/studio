@@ -823,6 +823,7 @@ h2 {
 .about {
   max-width: 55rem;
   background: transparent;
+  min-height: 50vh;
   max-height: min-content;
   backdrop-filter: blur(3px);
   overflow: hidden;
