@@ -1,0 +1,73 @@
+.projects {
+  display: none;
+}
+
+.project__active {
+  display: grid;
+}
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+h1 {
+  font-size: 10rem;
+  text-align: center;
+}
+
+.page--2 {
+  width: 100%;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.page--3 {
+  width: 100%;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.page--4 {
+  height: calc(100vh - 7rem);
+  width: 100%;
+  background-image: linear-gradient(transparent, rgb(255, 255, 255)),
+    url(../img/neoncityday.29e11f78.gif);
+  background-size: cover;
+  // background-position: center center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.page--5 {
+  height: 100%;
+  width: 100%;
+  background-color: $color-ash;
+}
+
+.section--hidden {
+  opacity: 0 !important;
+  transform: translateX(10rem) !important;
+}
+
+.section--2 {
+  max-width: 100%;
+  margin: 5rem 0rem 0rem 2rem;
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 5rem 0rem 0rem 0rem;
+  }
+}
+
+.section--3 {
+  max-width: 100%;
+  margin: 5rem 0rem 0rem 2rem;
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 5rem 0rem 0rem 0rem;
+  }
+}
+
+.section--5 {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

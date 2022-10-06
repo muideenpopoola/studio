@@ -1,0 +1,73 @@
+.contact__box {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  justify-content: space-between;
+
+
+  .search {
+    display: flex;
+    align-items: center;
+    background-color: rgba(175, 176, 159, 0.526);
+    border-radius: 100px;
+    border-radius: 100px;
+    padding: 0 2rem;
+
+    &__icon {
+      height: 2rem;
+      width: 2rem;
+      fill: #fff;
+    }
+
+    &__input {
+      font-family: inherit;
+      font-size: 1.5rem;
+      color: $color-light-black;
+      background-color: transparent;
+      border: none;
+      padding: 1.8rem 1rem;
+      width: 120%;
+      transition: all.2s;
+      margin-right: -3rem;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2rem;
+        color: rgba(255, 255, 255, 0.702);
+      }
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+
+  .card__box {
+    padding: 0.8rem;
+    margin-right: 1.8rem;
+    border-radius: 50%;
+
+    svg {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
+    .one {
+      fill: $color-yellow;
+    }
+    .two {
+      fill: $color-twitter;
+    }
+    .three {
+      fill: $color-purple;
+    }
+    .four {
+      fill: rgb(110, 104, 104);
+    }
+  }
+}

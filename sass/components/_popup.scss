@@ -1,0 +1,216 @@
+.studio__popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 38%;
+  overflow: hidden;
+
+  background-color: white;
+  padding: 1.5rem 3rem;
+  border-radius: 30px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 100;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 60%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    width: 80%;
+  }
+
+  .popup__header {
+    .sub__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      margin-bottom: 1.5rem;
+
+      .question-h2 {
+        text-transform: none;
+        font-size: inherit;
+        font-weight: 300;
+        color: $color-light-black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .question {
+          margin-right: 1rem;
+
+          .qqq {
+            color: $color-pink !important;
+            margin-right: 1rem;
+          }
+        }
+      }
+      span {
+        font-size: 3rem;
+      }
+    }
+    .rainbow {
+      transform: scaleX(1.15);
+      div {
+        max-height: 0.2rem;
+      }
+    }
+  }
+
+  .popup__main {
+    margin-top: 2rem;
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+    color: $color-light-black;
+
+    ul {
+      margin-top: 2rem;
+      li {
+        list-style: none;
+        padding: 1.5rem 3rem;
+        cursor: pointer;
+        box-shadow: 2px 1px 2px 1px rgba(155, 148, 148, 0.413);
+      }
+    }
+  }
+
+  .popup__footer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end;
+
+    &-div {
+      background: linear-gradient(145deg, #f0f0f0, #fff);
+      box-shadow: 5px 5px 6px #e3e0e0, -5px -5px 6px #ffffff;
+      padding: 1rem 2rem;
+      margin-top: 1rem;
+      display: inline;
+      width: 10rem;
+      border-radius: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        background: #cecbcb;
+        box-shadow: inset 5px 5px 10px #cecbcb, inset -5px -5px 10px #d6f5f8;
+      }
+
+      h3 {
+        background-color: transparent;
+        font-size: 1.4rem;
+        color: $color-whatsapp;
+      }
+    }
+  }
+}
+
+.popup__list {
+  display: flex;
+  align-items: center;
+  color: #707068;
+
+  svg {
+    fill: #707068;
+  }
+
+  .logo {
+    margin-right: 1rem;
+
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  .arrow {
+    margin-left: auto;
+    svg {
+      height: 2rem;
+      width: 1.5rem;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+#about__popup {
+  width: 32rem;
+  background-color: #fff;
+  position: absolute;
+  top: 58%;
+  left: 62%;
+  transform: translate(-50%, -50%);
+
+  @media only screen and (max-width: $bp-small) {
+    left: 50%;
+    width: max-content;
+  }
+
+  .popup__header {
+    .sub__head {
+      font-size: 2rem;
+      line-height: 2.2rem;
+      margin-bottom: 2rem;
+
+      .question-h2 {
+        text-transform: none;
+        font-size: inherit;
+        font-weight: 300;
+        color: $color-pink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .close-studio {
+        height: 3rem !important;
+        width: 3rem !important;
+        color: rgb(141, 126, 126);
+      }
+    }
+  }
+
+  .popup__main {
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+    color: $color-light-black;
+
+    .popup__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000000;
+      gap: 1rem;
+
+      svg {
+        fill: $color-black;
+      }
+    }
+    ul {
+      margin-top: 2rem;
+
+      li {
+        list-style: none;
+
+        border-radius: 0;
+        box-shadow: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 2rem;
+        margin: 1.5rem;
+        cursor: pointer;
+        transition: all 0.2s;
+        border-radius: 10px;
+
+        p {
+          text-transform: uppercase;
+          color: rgba(0, 0, 0, 0.87);
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

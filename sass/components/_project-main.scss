@@ -1,0 +1,168 @@
+.project__main {
+  // min-width: 92%;
+  background-color: $color-ash;
+  padding: 4rem 2rem 4rem 2rem;
+  margin: 0 auto;
+
+  &--nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: $color-dark-background;
+    // justify-content: space-around;
+    max-width: 120rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 80rem;
+    }
+
+    .first {
+      @media only screen and (max-width: $bp-small) {
+        display: block;
+      }
+    }
+
+    p {
+      flex: 1;
+      padding: 1.7rem 0;
+      text-align: center;
+      cursor: pointer;
+
+      @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
+
+      &:hover {
+        background-color: rgba(178, 169, 171, 0.399);
+      }
+    }
+  }
+
+  &--tittle {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 5rem;
+    color: $color-light-black;
+    padding: 4rem;
+    max-width: 120rem;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 80rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 3rem 1rem;
+      font-size: 4rem;
+    }
+
+    span {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+
+      @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
+    }
+  }
+
+  .rainbow {
+    width: 100%;
+    transform: scale(1);
+    margin: 0;
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 80rem;
+      margin: 0 auto;
+    }
+
+    .github {
+      width: 15%;
+    }
+    .twitter {
+      width: 15%;
+    }
+  }
+}
+
+.project__main--projects {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-top: 4rem;
+  max-width: 120rem;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $bp-medium) {
+    max-width: 80rem;
+  }
+
+  .projects__list {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .projects__skill {
+    flex: 2;
+    background-color: #fff;
+    position: sticky;
+    top: 10rem;
+    padding: 4rem 1rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+
+    .header {
+      .top {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.4rem;
+        font-size: 2.3rem;
+        font-weight: 500;
+        line-height: 3.6rem;
+        color: $color-light-black;
+
+        svg {
+          fill: rgba(0, 0, 0, 0.6);
+        }
+      }
+
+      .buttom {
+        p {
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 2.5rem;
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+  }
+
+  .skill__main {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.6);
+    padding-right: 2rem;
+
+    div {
+      display: inline-block;
+      padding: 1.5rem 1rem;
+
+      input {
+        cursor: pointer;
+        border: 3px solid rgba(255, 255, 255, 0.7);
+      }
+      label {
+        cursor: pointer;
+      }
+    }
+  }
+}

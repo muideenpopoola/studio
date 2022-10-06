@@ -1,0 +1,424 @@
+.dark {
+  #dark-icon {
+    padding: 2.5rem;
+    border-radius: 150px;
+    background: #0d0c0c;
+    box-shadow: 2px 2px 0px #050505, -2px -2px 0px #151313;
+    height: 5rem;
+    width: 5rem;
+
+    &:hover {
+      background: #0d0c0c;
+      box-shadow: inset 10px 10px 20px #070707, inset -10px -10px 20px #131111;
+    }
+  }
+
+  .side-bar {
+    background-color: $color-black !important;
+
+    .active {
+      color: $color-pink;
+      transition: all 0.2s;
+      border-radius: 10px;
+
+      background-color: #e9256767 !important;
+
+      &:hover {
+        background: #e9256767 !important;
+        box-shadow: inset 16px 16px 32px #ea769d53,
+          inset -16px -16px 32px #ea769d53 !important;
+      }
+    }
+  }
+
+  .side-bar__header {
+    border-bottom: 1px solid rgba(60, 58, 58, 0.518);
+    .name {
+      &__h1 {
+        color: $color-pink;
+      }
+
+      &__h3 {
+        color: $color-dark-background;
+      }
+    }
+  }
+
+  .main__container {
+    max-height: max-content;
+  }
+
+  .main {
+    border-left: 1px solid #3a3838;
+  }
+
+  .box {
+    background-color: transparent;
+    box-shadow: 1px 1px 1px #363535, -1px -1px 1px #121111;
+  }
+
+  .main__main {
+    background-image: url(../img/dark.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .main__header {
+    background-color: $color-dark !important;
+    box-shadow: none;
+
+    icon {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
+    .off {
+      display: none !important;
+    }
+
+    .on {
+      display: inline-block !important;
+
+      .sunny {
+        fill: #fff !important;
+        height: 2.3rem;
+        margin-left: -0.5rem;
+      }
+    }
+
+    .icon-github,
+    .icon-head {
+      fill: #fff;
+    }
+  }
+
+  .side__item {
+    background-color: $color-black !important;
+    color: #fff !important;
+
+    h2 {
+      color: #fff;
+    }
+  }
+
+  .neophormism {
+    background: #100f0f;
+    box-shadow: 3px 3px 0px #000000, -3px -3px 0px #100f0f;
+    transition: all 0.5s;
+
+    &:hover {
+      background: #242323 !important;
+      box-shadow: 3px 4px 0px #000000, -3px -4px 0px #242323;
+    }
+  }
+  .main {
+    background-color: $color-black !important;
+  }
+
+  .button-main {
+    background: transparent;
+  }
+
+  .toggle-icon {
+    fill: $color-pink;
+  }
+
+  .main__footer {
+    background-color: $color-dark;
+
+    .copyright {
+      color: #fff;
+    }
+  }
+  .dark-mode {
+    align-items: center;
+  }
+
+  .header__h2--name {
+    color: #fff;
+  }
+  .top__left-side {
+    color: $color-white !important;
+
+    a,
+    h2 {
+      color: $color-white !important;
+    }
+  }
+
+  .time > p {
+    color: $color-white !important;
+  }
+
+  .main__main--bottom * p,
+  h2 {
+    color: $color-white !important;
+  }
+
+  .studio__popup {
+    background-color: $color-dark !important;
+    color: $color-white !important;
+
+    .popup__header {
+      .sub__head {
+        color: $color-white !important;
+
+        span {
+          color: $color-white !important;
+        }
+
+        .question-h2 {
+          h3 {
+            color: $color-white !important;
+          }
+        }
+      }
+    }
+
+    .popup__main {
+      color: $color-white !important;
+
+      li {
+        box-shadow: 1px 1px 1px 1px rgba(77, 75, 75, 0.413);
+      }
+    }
+    .popup__footer {
+      padding: 0.5rem 3rem;
+      margin-top: 2rem;
+      border-top: 1px solid rgb(95, 93, 93);
+      transform: scaleX(1.1);
+
+      &-div {
+        background: #1d1c1c;
+        box-shadow: 2px 2px 0px #000000, -2px -2px 0px #100f0f;
+
+        &:hover {
+          background: #242323 !important;
+          box-shadow: 3px 3px 0px #000000, -3px -3px 0px #242323;
+        }
+      }
+    }
+  }
+
+  .popup__list {
+    color: $color-white;
+
+    svg {
+      fill: $color-white;
+    }
+
+    .logo {
+      margin-right: 1rem;
+    }
+
+    .arrow {
+      margin-left: auto;
+      svg {
+        height: 2rem;
+        width: 1.5rem;
+      }
+    }
+  }
+
+  #about__popup {
+    .popup__header {
+      .sub__head {
+        font-size: 2rem;
+        line-height: 2.2rem;
+        margin-bottom: 2rem;
+
+        .question-h2 {
+          text-transform: none;
+          font-size: inherit;
+          font-weight: 300;
+          color: $color-pink;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .close-studio {
+          height: 3rem !important;
+          width: 3rem !important;
+          color: rgb(141, 126, 126);
+        }
+      }
+    }
+    svg {
+      fill: white !important;
+    }
+    p {
+      color: white !important;
+    }
+  }
+
+  .rainbow {
+    .github {
+      background-color: #fff !important;
+    }
+  }
+
+  .page--4 {
+    background-image: linear-gradient(transparent, rgb(0, 0, 0)),
+      url(../img/neoncity.a8e926c2.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .page--5 {
+    background-color: $color-light-black;
+
+    .section--5 {
+      color: #fff;
+    }
+  }
+
+  .about {
+    &__header {
+      .icon-github {
+        fill: #fff;
+      }
+      .icon-purple {
+        fill: $color-pink;
+      }
+    }
+    &__main {
+      background-color: rgba(0, 0, 0, 0.571);
+
+      .about__main--h2 {
+        color: $color-pink !important;
+      }
+      h3 {
+        color: $color-white;
+      }
+      .logo {
+        background-color: $color-black;
+      }
+    }
+  }
+
+  .page--2,
+  .page--3 {
+    background-color: $color-black;
+
+    .project__header {
+      @media only screen and (max-width: $bp-small) {
+        background-image: linear-gradient(to bottom, $color-black, transparent),
+          url(../img/giphy.gif);
+      }
+    }
+
+    .project__header--video {
+      background-image: linear-gradient(to right, $color-black, transparent),
+        url(../img/giphy.gif) !important;
+    }
+
+    .project__header--box {
+      background-color: $color-black;
+      box-shadow: 2px 2px 1px #0e0e0e, -1px -1px 1px #1b1b1b;
+      p {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+
+    .project__main {
+      background-color: $color-black;
+
+      &--nav {
+        background-color: #1e1e1e;
+      }
+
+      &--tittle {
+        color: $color-white;
+      }
+    }
+
+    .project__main--projects {
+      .projects__skill {
+        background-color: #1e1e1e;
+
+        .header .top {
+          color: #ffffff;
+
+          svg {
+            fill: #fff;
+          }
+        }
+
+        .header .buttom p {
+          color: rgba(255, 255, 255, 0.7);
+        }
+      }
+    }
+
+    .skill__main {
+      color: rgba(255, 255, 255, 0.7);
+      div {
+        input {
+          accent-color: $color-black;
+        }
+      }
+    }
+
+    .apps {
+      background-color: #1e1e1e;
+
+      &__text {
+        h2 {
+          color: #fff;
+        }
+
+        h4 {
+          color: rgba(255, 255, 255, 0.7);
+        }
+
+        h5 {
+          color: rgba(255, 255, 255, 0.7);
+
+          .finished {
+            color: #4caf50;
+          }
+
+          .indevelopment {
+            color: #9c27b0;
+          }
+        }
+
+        .apps__btn {
+          button {
+            border: none;
+            text-transform: uppercase;
+            padding: 0.7rem 1.5rem;
+            background-color: $color-black;
+
+            box-shadow: 2px 2px 2px #070707, -1px -1px 1px #ffffff;
+
+            &:hover {
+              background: #1e1e1e;
+              box-shadow: inset 5px 5px 10px #070707,
+                inset -5px -5px 10px #161717;
+            }
+
+            a {
+              color: #fff;
+
+              svg {
+                fill: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      .about__main--icons {
+        .logo__container {
+          .logo {
+            background-color: #1e1e1e;
+          }
+        }
+      }
+    }
+  }
+}

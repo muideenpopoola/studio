@@ -1,0 +1,227 @@
+.main__container {
+  max-height: max-content;
+  position: relative;
+  width: 100%;
+}
+
+.main__main {
+  background-image: url(../img/homelight.jpg.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 4rem 4rem;
+  gap: 2rem;
+  min-height: 100%;
+  // width: 100%;
+
+  &--top {
+    flex: 2;
+    display: flex;
+    gap: 2rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 75vw;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .top__left-side {
+      border-radius: 2rem;
+      flex: 50%;
+      background-color: $color-light-background;
+    }
+
+    .top__right-side {
+      border-radius: 2rem;
+      flex: 50%;
+      display: flex;
+      flex-direction: column;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 50%;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        min-height: 10rem;
+      }
+
+      .top {
+        flex: 1;
+        position: relative;
+
+        .time {
+          background-color: $color-light-background;
+          width: 80%;
+          border-radius: 5rem;
+          height: 5rem;
+          margin-right: 1rem;
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 2rem;
+
+          @media only screen and (max-width: $bp-medium) {
+            width: 95%;
+          }
+
+          @media only screen and (max-width: $bp-small) {
+            margin-left: auto;
+            position: relative;
+            margin-bottom: 4rem;
+            padding: 3.5rem 5rem;
+            text-align: right;
+            width: 80%;
+          }
+
+          p {
+            font-size: 2rem;
+            font-weight: 300;
+            line-height: 3.2rem;
+            color: $color-light-black;
+
+            @media only screen and (max-width: $bp-medium) {
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+
+      .bottom {
+        flex: 1;
+        background-color: $color-light-background;
+        border-radius: 2rem;
+      }
+    }
+  }
+
+  &--bottom {
+    flex: 0 0 15rem;
+    display: flex;
+    gap: 2rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 75vw;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      gap: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      width: 100%;
+      gap: 4rem;
+    }
+
+    .bottom__left-side {
+      background-color: rgba(255, 179, 0, 0.2);
+      border-radius: 2rem;
+      flex: 1;
+    }
+
+    .bottom__right-side {
+      background-color: rgba(0, 98, 184, 0.2);
+      border-radius: 2rem;
+      flex: 1;
+    }
+
+    .bottom__left-side2 {
+      background-color: rgba(128, 0, 128, 0.2);
+      border-radius: 2rem;
+      flex: 1;
+    }
+
+    .bottom__right-side2 {
+      background-color: rgba(82, 177, 85, 0.2);
+      border-radius: 2rem;
+      flex: 1;
+    }
+  }
+}
+
+.top__left-side {
+  padding: 3rem;
+  position: relative;
+
+  h2 {
+    text-transform: none;
+    font-size: 3.4rem;
+    line-height: 4rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    span {
+      font-weight: 900;
+      color: $color-pink;
+    }
+  }
+
+  p {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    font-weight: 300;
+    margin-top: 2rem;
+
+    a {
+      color: black;
+      font-weight: 500;
+    }
+  }
+
+  h6 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    margin-top: 1.2rem;
+  }
+
+  button {
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: 5rem;
+    margin-top: 2.5rem;
+    transform: translateX(20rem);
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: #fff;
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 1.8rem;
+    }
+
+    .question {
+      margin-right: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      transform: translateX(0);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.icon--box {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.icon-head {
+  fill: rgb(68, 66, 66);
+}
+
+.icon-twitter {
+  fill: $color-twitter;
+}
+.icon-facebook {
+  fill: $color-facebook;
+}
+
+.icon-whatsapp {
+  fill: $color-whatsapp;
+}
+.icon-twitch {
+  fill: $color-twitch;
+}
+
+.icon-discord {
+  fill: $color-discord;
+}
+.icon-youtube {
+  fill: $color-youtube;
+}
+.icon-purple {
+  fill: $color-purple;
+}

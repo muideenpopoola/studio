@@ -1,0 +1,51 @@
+.rainbow {
+  height: 0.5rem;
+  transform: scaleX(1.08);
+  display: flex;
+  margin-bottom: 0.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    transform: scaleX(1.02);
+  }
+
+  .github {
+    height: 0.5rem;
+    width: 14%;
+    background-color: black;
+  }
+
+  .youtube {
+    background-color: $color-youtube;
+    height: 0.5rem;
+    width: 14%;
+  }
+  .color-yellow {
+    background-color: $color-yellow;
+    height: 0.5rem;
+    width: 14%;
+  }
+
+  .whatsapp {
+    background-color: $color-whatsapp;
+    height: 0.5rem;
+    width: 14%;
+  }
+
+  .twitter {
+    background-color: $color-twitter;
+    height: 0.5rem;
+    width: 14%;
+  }
+
+  .twitch {
+    background-color: $color-twitch;
+    height: 0.5rem;
+    width: 14%;
+  }
+
+  .color-purple {
+    background-color: $color-purple;
+    height: 0.5rem;
+    width: 14%;
+  }
+}

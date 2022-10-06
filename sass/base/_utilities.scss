@@ -1,0 +1,48 @@
+.active {
+  color: $color-pink;
+  transition: all 0.2s;
+  border-radius: 10px;
+
+  background-color: #e9256767 !important;
+
+  &:hover {
+    background: #e9256767;
+    box-shadow: inset 16px 16px 32px #ea769d53, inset -16px -16px 32px #ea769d53 !important;
+  }
+
+  h2 {
+    color: inherit;
+  }
+}
+
+.neophormism {
+  border-radius: 50%;
+  background: linear-gradient(145deg, #f0f0f0, #fff);
+  box-shadow: 5px 5px 6px #e3e0e0, -5px -5px 6px #ffffff;
+
+  &:hover {
+    background: #cecbcb;
+    box-shadow: inset 5px 5px 10px #cecbcb, inset -5px -5px 10px #d6f5f8;
+  }
+}
+
+.box {
+  background-color: transparent;
+  box-shadow: 1px 1px 1px #5d5b5b, -1px -1px 1px #fbfbfb;
+}
+
+.box-inside {
+  background-color: $color-dark-background;
+  box-shadow: 1px 2px 1px #5d5b5b, -1px -2px 1px #f3dfdf;
+
+  &:hover {
+    background-color: $color-light-background;
+    box-shadow: 1px 1px 1px #5d5b5b, -1px -1px 1px #f3dfdf;
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .margin-top {
+    margin-top: 2rem;
+  }
+}

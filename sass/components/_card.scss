@@ -1,0 +1,93 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    width: 100% !important;
+  }
+
+  &__img {
+    height: 10rem;
+    width: 10rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+  }
+
+  &__h2 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    color: $color-light-black;
+    text-transform: none;
+    padding: 0;
+  }
+
+  &__p {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    color: $color-light-black;
+  }
+
+  &__box {
+    padding: 1rem 3rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #0000006f, -1px -1px 1px #ffffffdb;
+
+    &-yellow {
+      background-color: rgba(255, 179, 0, 0.2);
+
+      &:hover {
+        background-color: rgba(255, 179, 0, 0.2);
+      }
+
+      svg {
+        fill: $color-yellow;
+      }
+    }
+
+    &-blue {
+      background-color: rgba(0, 98, 184, 0.2);
+      &:hover {
+        background-color: rgba(0, 98, 184, 0.2);
+      }
+
+      svg {
+        fill: $color-twitter;
+      }
+    }
+
+    &-purple {
+      background-color: rgba(128, 0, 128, 0.2);
+      &:hover {
+        background-color: rgba(128, 0, 128, 0.2);
+      }
+
+      svg {
+        fill: $color-purple;
+      }
+    }
+
+    &-green {
+      background-color: rgba(82, 177, 85, 0.2);
+      &:hover {
+        background-color: rgba(82, 177, 85, 0.2);
+      }
+
+      svg {
+        fill: $color-whatsapp;
+      }
+    }
+
+    &:hover {
+      box-shadow: 5px 7px 5px #0000006f, -1px -1px 1px #848181;
+    }
+  }
+}

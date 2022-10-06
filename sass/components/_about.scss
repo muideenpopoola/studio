@@ -1,0 +1,139 @@
+.about {
+  max-width: 55rem;
+  background: transparent;
+  // min-height: max-content;
+  max-height: min-content;
+  backdrop-filter: blur(3px);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 80%;
+  }
+
+  &__header {
+    padding: 3rem;
+    padding-bottom: 0;
+    flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--icons {
+      display: flex;
+      align-items: center;
+      justify-content: stretch;
+      gap: 2rem;
+
+      .last {
+        margin-left: auto;
+      }
+    }
+
+    img {
+      height: 12rem;
+      width: 12rem;
+      object-fit: contain;
+      align-items: flex-end;
+      transform: translateY(50%);
+      margin: 0 auto;
+      z-index: 10;
+    }
+
+    .rainbow {
+      transform: scale(1.1);
+      margin-bottom: 0;
+    }
+  }
+
+  &__main {
+    padding: 3rem;
+    overflow: hidden;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.571);
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 3rem 1rem;
+      margin-top: 3rem;
+    }
+
+    h2 {
+      font-size: 3.4rem;
+      font-weight: 300;
+      line-height: 4.3rem;
+      color: $color-black;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 2.5rem;
+      }
+    }
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 3.4rem;
+      color: $color-black;
+    }
+
+    &--icons {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 7rem 2rem 7rem;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      @media only screen and (max-width: $bp-small) {
+        padding: 0 4rem 4rem 4rem;
+      }
+
+      .logo__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 1rem;
+
+        .hide-text {
+          display: none !important;
+          transform: translateX(40rem) !important;
+        }
+
+        .logo-text {
+          background-color: rgba(44, 43, 43, 0.8);
+          padding: 0.8rem;
+          z-index: 100;
+          color: $color-white;
+          font-size: 1.5rem;
+          border-radius: 5px;
+          position: absolute;
+          top: 0;
+          transform: translateY(-4.5rem);
+        }
+        .logo {
+          height: 4rem;
+          width: 4rem;
+          background-color: white;
+          border-radius: 50%;
+          padding: 0.7rem;
+        }
+      }
+    }
+  }
+}

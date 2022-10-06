@@ -1,0 +1,21 @@
+.header__h2--name {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  text-transform: none;
+  color: $color-light-black;
+
+  span {
+    font-weight: 900;
+    color: $color-pink;
+  }
+}
+
+.active-project {
+  color: $color-pink;
+  border-bottom: 2px solid $color-pink;
+
+  &:hover {
+    background-color: rgba(230, 132, 148, 0.338) !important;
+  }
+}

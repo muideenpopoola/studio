@@ -1,0 +1,99 @@
+.app {
+  display: flex;
+  height: 100vh;
+
+  @media only screen and (max-width: $bp-large) {
+    position: relative;
+  }
+
+  .side-bar {
+    flex: 0 0 25rem;
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    transition: all 0.2s;
+    background-color: white;
+    width: max-content;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+
+    .main__header--nav {
+      display: none;
+
+      @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 4rem 1rem;
+      }
+    }
+
+    &__header {
+      flex: 0 0 9rem;
+    }
+
+    &__main {
+      flex: 1;
+      min-height: max-content;
+
+      overflow-y: auto;
+    }
+
+    &__footer {
+      flex: 0 0 7rem;
+    }
+  }
+
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    position: relative;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 100vw;
+      // z-index: -10;
+    }
+
+    &__header {
+      background-color: #f5f5f5;
+      flex: 0 0 7rem;
+      z-index: 2;
+      box-shadow: 0px 3px 1px #7e7c7c34;
+      padding: 1.4rem 2rem;
+      position: sticky;
+      top: 0;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: calc(100% - 1rem);
+      }
+    }
+
+    &__main {
+      flex: 0 0 1;
+    }
+
+    &__footer {
+      flex: 0 0 4rem;
+      min-height: 4rem;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      flex-wrap: wrap;
+
+      .footer__text {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        color: $color-pink;
+      }
+    }
+  }
+}
