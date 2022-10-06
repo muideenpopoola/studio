@@ -453,7 +453,8 @@ h2 {
       .main__main--bottom {
         flex-direction: column;
         width: 100%;
-        gap: 4rem; } }
+        gap: 4rem;
+        margin-top: 4rem; } }
     .main__main--bottom .bottom__left-side {
       background-color: rgba(255, 179, 0, 0.2);
       border-radius: 2rem;
@@ -1069,6 +1070,9 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 2rem; }
+    @media only screen and (max-width: 60em) {
+      .project__main--projects .projects__list {
+        gap: 4rem; } }
   .project__main--projects .projects__skill {
     flex: 2;
     background-color: #fff;
